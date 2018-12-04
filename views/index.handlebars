@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="text-center">Welcome</h1>
+  {{#if user}}
+  you are logged in
+    {{#if user.isadmin}}
+      you are an admin
+    {{/if}}
+{{else}}
+  you are not logged in
+{{/if}}
+</div>
